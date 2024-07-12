@@ -47,6 +47,28 @@ var profile = {
 		voltage: "3,3V",
 		inout: "34"
 	},
+	esp01: {
+	    description: "ESP01",
+	    BUILTIN_LED: 2,
+		picture : "media/esp8266.jpg",
+		dropdownPWM: [["0", "0"], ["1", "1"], ["2", "2"], ["3", "3"]],
+		dropdownAnalog: [["A0", "A0"]],
+		interrupt: [["0", "0"], ["1", "1"], ["2", "2"], ["3", "3"]],
+		serial: [['300', '300'], ['600', '600'], ['1200', '1200'],
+                ['2400', '2400'], ['4800', '4800'], ['9600', '9600'],
+                ['14400', '14400'], ['19200', '19200'], ['28800', '28800'],
+                ['31250', '31250'], ['38400', '38400'], ['57600', '57600'],
+                ['115200', '115200']],
+		serialPin: [["Rx/Tx", "0"]],
+		build: "",
+		upload_arg: "esp8266:esp8266",
+		cpu: "esp8266",
+		speed: "115200",
+		prog: "python",
+		usb: "micro USB",
+		voltage: "3,3V",
+		inout: "4"
+	},
 	esp8266: {
 	    description: "ESP8266",
 	    BUILTIN_LED: 2,
